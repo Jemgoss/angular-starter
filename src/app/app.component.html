@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center" class="content">
+  <span style="display: block">This is the {{ title }} app!</span>
+  <button (click)="toggle()">{{timersub ? "Stop" : "Start"}}</button>
+  <table>
+    <tbody>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr *ngFor="let entry of censusData">
+        <td>{{entry.name}}</td>
+        <td>{{entry.age}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
